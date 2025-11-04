@@ -3,7 +3,7 @@ principal = 1000
 rate = 0.05
 time = 3
 # Calculate simple interest
-Simple_int = principal * rate * time
+Interest = principal * rate * time
 # Print the result
-print(f"The simple interest is: {Simple_int}")
+print(f"The simple interest is: {Interest}")
 
