@@ -1,6 +1,6 @@
 # Define two variables with values 10 and 5 respectively and perfom basic operations.
 number1 = 10
-number2 = 6
+number2 = 5
 
 # Create a variable sum to hold the sum of variable1 and variable2
 sum = number1 + number2
