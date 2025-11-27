@@ -24,4 +24,4 @@ if __name__ == "__main__":
         converted = convert_to_celcius(temp)
         print(f"{temp}°F is {converted}°C")
     else:
-        print("Invalid temperature. Please enter a numeric valu.")
+        print("Invalid temperature. Please enter a numeric value.")
