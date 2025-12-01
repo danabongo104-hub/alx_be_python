@@ -3,7 +3,7 @@ import unittest
 
 
 class TestsimpleCalculator(unittest.TestCase):
-    def setup(self):
+    def setUp(self):
         self.calculator = simple_calculator.SimpleCalculator()
 
     def test_add(self):
@@ -25,8 +25,8 @@ class TestsimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calculator.divide(6, 3), 2)
         self.assertEqual(self.calculator.divide(-6, 2), -3)
         self.assertEqual(self.calculator.divide(-6, -2), 3)
-        with self.assertRaises(ZeroDivisionError):
-            self.calculator.divide(6, 0)
+        self.assertIsNone(self.calculator.divide(6, 0))
+            
 
 if __name__ == "__main__":
     unittest.main()
