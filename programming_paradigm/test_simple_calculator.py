@@ -1,10 +1,12 @@
-import simple_calculator
+from simple_calculator import SimpleCalculator
 import unittest
 
 
 class TestsimpleCalculator(unittest.TestCase):
     def setUp(self):
-        self.calculator = simple_calculator.SimpleCalculator()
+        """set up the SimpleCalculator instance before each tests.
+        """
+        self.calculator = SimpleCalculator()
 
     def test_add(self):
         self.assertEqual(self.calculator.add(2, 3), 5)
